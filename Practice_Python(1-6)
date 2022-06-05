@@ -1,0 +1,99 @@
+Q1
+
+seq = input("Enter sequense ", )
+ade, cyt, thy, gua = (seq. count("a")), (seq. count("c")), (seq.count("t")), (seq.count("g"))
+print("Adenine is", ade, " Cytosine is", cyt, " Thymine is", thy, " Guanine is", gua)
+
+Answer: Adenine is 21  Cytosine is 11  Thymine is 18  Guanine is 18
+
+seq = input("Enter sequence: ", )
+seqlist = list(seq)
+seq2 = seqlist[1:15]
+print("".join(seq2))
+
+Answer: agaatgtatatgtc
+
+seq = input("Enter sequence: ", )
+seqlist = list(seq)
+seq2 = seqlist[::-1]
+print("".join(seq2))
+
+Answer: cgcgaaattggcgggtaactcataatgatgaatcagtggtccgattgcacagtctgtatatgtaagaa
+
+seq = input("Enter sequence: ", )
+l = len(seq)
+print(l)
+
+Answer: 68
+
+Q2
+
+seq = list(input("Введите последовательность ", ))
+transcription = dict({"a": "a", "t": "u", "c": "c", "g": "g"})
+for i in seq:
+  print(transcription.get(i))
+
+Answer: acguuaauuagcagcugacggaguaauccccaaaccuggagacgauguau
+
+Alternatively: 
+seq = (input("Введите последовательность ", ))
+rna = seq.replace("t", "u")
+print(rna)
+
+Answer: acguuaauuagcagcugacggaguaauccccaaaccuggagacgauguau
+
+
+Q3
+
+my_iter = iter([386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,958,743, 527])
+for n in my_iter:
+  if n > 237:
+    if n % 2 == 0:
+      print(n)
+  else:
+    print("Значение меньше 237")
+    break
+
+Answer: 
+386
+462
+Значение меньше 237
+
+Q4
+
+my_iter=list(['Eeny', 'meeny', 'miney', 'moe', 'Catch', 'a', 'tiger', 'by', 'his', 'toe', 'If', 'he', 'squeals', 'let', 'him', 'go', 'Eeny', 'meeny', 'miney', 'moe'])
+for n in my_iter:
+  m = (my_iter.count(n))
+  if m == 1:
+    print(n)
+ 
+Answer: 
+Catch
+a
+tiger
+by
+his
+toe
+If
+he
+squeals
+let
+him
+go
+
+Q5
+d1 = dict({'a': 100, 'b': 200, 'c':300})
+d2 = dict({'a': 300, 'b': 200, 'd':400})
+a1, a2, b1, b2, c3, d3 = (d1.get("a")), (d2.get("a")), (d1.get("b")), (d2.get("b")), (d1.get("c")), (d2.get("d"))
+a3, b3 = a1+a2, b1+b2
+d_new = dict({"a": a3, "b": b3, "c": c3, "d": d3})
+print(d_new)
+
+Answer: {'a': 400, 'b': 400, 'c': 300, 'd': 400}
+
+Q6 
+seq = input("Enter sequense ", )
+composition = dict({"a": (seq. count("a")), "c": (seq. count("c")), "t": (seq.count("t")), "g": (seq.count("g"))})
+print(composition)
+
+Answer: {'a': 21, 'c': 11, 't': 18, 'g': 18}
